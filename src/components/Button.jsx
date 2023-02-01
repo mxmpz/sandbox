@@ -1,15 +1,15 @@
-function Button () {
+function Button ({ text, onClick }) {
   const handleClick = () => {
     window.alert('Bien joué, tu as cliqué !')
   }
 
-  // const handleBlur = () => {
-  //   window.alert('Focus perdu')
-  // }
+  const handleBlur = () => {
+    window.alert('Focus perdu')
+  }
 
   return (
-    <button onClick={handleClick} /*onBlur={handleBlur}*/>
-      Click Me !
+    <button onClick={onClick} /*onBlur={handleBlur}*/>
+      {text}
     </button>
   )
 }
