@@ -2,7 +2,7 @@ function List ({ data }) {
   return (
     <ul>
       {
-        data.map(item => <li>{item}</li>)
+        data.map(item => <li key={item}>{item}</li>)
       }
     </ul>
   )
